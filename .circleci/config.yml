@@ -21,6 +21,10 @@ jobs:
       - run:
           name: build the jekyll site
           command: echo bundle exec jekyll build
+          
+      - run:
+          name: check if the file is present
+          command: cat new_file_build
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
